@@ -1,22 +1,22 @@
 // New avtar width
 $topic-avatar-width: 120px;
 
-.topic-area .topic-avatar {
+.topic-avatar {
   width: #{$topic-avatar-width};
 }
 
-.topic-area .avatar {
+.topic-avatar .avatar {
   width: #{$topic-avatar-width};
   height: #{$topic-avatar-width};
 }
 
-  // Make username flush with avatar
-.topic-area .topic-body {
+// Make username flush with avatar
+.topic-body {
   padding-top: 15px;
 }
 
-  // Custom min-height to account for bigger avatar
-.topic-area .cooked {
+// Custom min-height to account for bigger avatar
+.cooked {
   min-height: 29px;
 }
 
