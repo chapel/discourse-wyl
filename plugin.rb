@@ -4,4 +4,4 @@
 # authors: Jacob Chapel
 
 ### Large avatars
-register_asset "stylesheets/large-avatars.css.scss"
+register_asset "stylesheets/large-avatars.css.scss", :desktop
