@@ -1,8 +1,10 @@
 // New avtar width
+$vertical-padding: 16px;
 $topic-avatar-width: 120px;
 
 .topic-avatar {
   width: #{$topic-avatar-width};
+  padding-bottom: #{$vertical-padding};
 }
 
 .topic-avatar .avatar {
@@ -12,12 +14,12 @@ $topic-avatar-width: 120px;
 
 // Make username flush with avatar
 .topic-body {
-  padding-top: 15px;
+  padding-top: #{$vertical-padding};
 }
 
 // Custom min-height to account for bigger avatar
 .cooked {
-  min-height: 29px;
+  min-height: 28px;
 }
 
 // Overwrite gap width
