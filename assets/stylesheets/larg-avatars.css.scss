@@ -1,0 +1,34 @@
+// New avtar width
+$topic-avatar-width: 120px;
+
+.topic-area {
+
+  .topic-avatar {
+    width: #{$topic-avatar-width};
+
+    .avatar {
+      width: #{$topic-avatar-width};
+      height: #{$topic-avatar-width};
+    }
+
+  }
+
+  // Make username flush with avatar
+  .topic-body {
+    padding-top: 15px;
+  }
+
+  // Custom min-height to account for bigger avatar
+  .cooked {
+    min-height: 29px;
+  }
+
+}
+
+// Overwrite gap width
+$topic-body-width: 690px;
+$topic-body-width-padding: 11px;
+
+.gap {
+  width: calc(#{$topic-avatar-width} + #{$topic-body-width} + 2 * #{$topic-body-width-padding});
+}
