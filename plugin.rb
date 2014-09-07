@@ -5,4 +5,4 @@
 
 ### Large avatars
 register_asset "stylesheets/large-avatars.css.scss", :desktop
-register_asset "javascripts/initializers/large-avatars.js"
+register_asset "javascripts/initializers/large-avatars.js.es6"
