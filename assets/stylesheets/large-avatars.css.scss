@@ -7,7 +7,8 @@ $topic-avatar-width: 120px;
   padding-bottom: #{$vertical-padding};
 }
 
-.topic-avatar .avatar {
+.topic-avatar .avatar,
+.embedded-posts .topic-avatar {
   width: #{$topic-avatar-width};
   height: #{$topic-avatar-width};
 }
@@ -20,12 +21,4 @@ $topic-avatar-width: 120px;
 // Custom min-height to account for bigger avatar
 .cooked {
   min-height: 28px;
-}
-
-// Overwrite gap width
-$topic-body-width: 690px;
-$topic-body-width-padding: 11px;
-
-.gap {
-  width: calc(#{$topic-avatar-width} + #{$topic-body-width} + 2 * #{$topic-body-width-padding});
 }

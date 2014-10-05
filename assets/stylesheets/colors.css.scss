@@ -1,0 +1,58 @@
+$primary: #48484a;
+$tertiary: #CF3337;
+$soft-focus: #5B7C9F;
+$background: #FFE8C5;
+
+// Links
+a {
+  color: $tertiary;
+
+  &:visited {
+    color: darken($tertiary, 20%);
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $tertiary;
+  }
+}
+
+textarea:focus {
+  border-color: $soft-focus !important;
+  box-shadow: inset 0 1px 1px rgba(0,0,0, .3), 0 0 8px $soft-focus !important;
+}
+
+input {
+  &[type="text"]:focus, &[type="password"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus {
+    border-color: $soft-focus !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0, .3), 0 0 8px $soft-focus !important;
+  }
+}
+
+.select2-drop {
+  color: $primary;
+}
+
+.select2-results .select2-highlighted {
+  background: $background;
+  color: $primary;
+}
+
+.alert.alert-info {
+  background-color: $background;
+}
+
+.topic-body.highlighted {
+  background-color: $background;
+}
+
+.topic-list > tbody > tr.highlighted {
+  background-color: $background;
+}
+
+.topic-list .avatar.latest {
+  box-shadow: 0 0 6px 1px $soft-focus;
+}

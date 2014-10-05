@@ -1,0 +1,44 @@
+.embedded-posts .topic-body {
+  width: 82%;
+
+  // Minimum height for post body
+  p {
+    min-height: 50px;
+  }
+}
+
+// Username resizing
+.topic-area .topic-meta-data .username {
+  font-size: 16px;
+}
+
+// Post width resizing
+.topic-body {
+  width: auto;
+  min-width: 690px;
+  overflow: hidden;
+  float: none;
+}
+
+.embedded-posts.top,
+.embedded-posts .topic-body {
+  width: auto;
+}
+
+.embedded-posts .topic-body {
+  padding-top: 0;
+}
+
+.gutter {
+    display: none;
+}
+
+.gap {
+  width: 100%;
+}
+
+.post-cloak .reply-to-tab {
+  top: 5px;
+  right: 50px;
+  float: right;
+}
