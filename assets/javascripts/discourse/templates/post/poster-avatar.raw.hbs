@@ -1,1 +1,7 @@
-<a href="{{post.usernameUrl}}" classNames="trigger-user-card {{classNames}}" data-user-card="{{post.username}}">{{avatar post imageSize="huge"}}</a>
+<a href="{{post.usernameUrl}}" classNames="trigger-user-card {{classNames}}" data-user-card="{{post.username}}">
+  {{#unless post.controller.site.mobileView}}
+    {{avatar post imageSize="huge"}}
+  {{else}}
+    {{avatar post imageSize="large"}}
+  {{/unless}}
+</a>
