@@ -33,7 +33,7 @@ function toggleSpoiler(chunk) {
 }
 
 window.PagedownCustom.appendButtons.push({
-  id: buttonid,
+  id: buttonId,
   description: 'Spoiler [spoiler][/spoiler] CTRL+S',
   execute: toggleSpoiler,
   shortcut: 's'
