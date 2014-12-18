@@ -5,7 +5,7 @@
 
 ### Large avatars
 register_asset "stylesheets/large-avatars.css.scss", :desktop
-register_asset "javascripts/initializers/large-avatars.js.es6"
+register_asset "javascripts/discourse/templates/post/poster-avatar.raw.hbs", :desktop
 
 ### Large posts
 register_asset "stylesheets/large-posts.css.scss", :desktop
