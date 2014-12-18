@@ -6,7 +6,7 @@ var endRe = /^\[\/spoiler\]/;
 
 function toggleSpoiler(chunk) {
 
-  chunk.trimWhiteSpace(true);
+  chunk.trimWhitespace(true);
 
   var tagBefore = startRe.exec(chunk.before);
   var tagAfter = endRe.exec(chunk.after);
