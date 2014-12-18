@@ -1,3 +1,5 @@
+var buttonId = 'wmd-spoiler-button';
+
 var startTag = '[spoiler]';
 var endTag = '[/spoiler]';
 
@@ -5,6 +7,11 @@ var startRe = /\[spoiler\]$/;
 var endRe = /^\[\/spoiler\]/;
 
 function toggleSpoiler(chunk) {
+
+  if (!chunk) {
+    $('#' + buttonId).click();
+    return;
+  }
 
   chunk.trimWhitespace(true);
 
@@ -26,7 +33,7 @@ function toggleSpoiler(chunk) {
 }
 
 window.PagedownCustom.appendButtons.push({
-  id: 'wmd-spoiler-button',
+  id: buttonid,
   description: 'Spoiler [spoiler][/spoiler] CTRL+S',
   execute: toggleSpoiler,
   shortcut: 's'
