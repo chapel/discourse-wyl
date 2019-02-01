@@ -2,7 +2,7 @@ export default {
   name: 'large-avatars',
 
   initialize: function (container) {
-    var PosterAvatarComponent = container.lookupFactory('component:poster-avatar');
+    var PosterAvatarComponent = container.factoryFor('component:poster-avatar');
 
     var isMobile = Discourse.Mobile.isMobileDevice;
 
